@@ -1,65 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+/* Signup page */
 
-body {
-    background-color: #f2f2f2;
+.signup-page {
+    min-height: calc(100vh - 72px);
+    padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.container {
-    background: white;
-    padding: 30px;
-    width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.signup-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 36px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 16px 45px rgba(15, 23, 42, 0.12);
     text-align: center;
 }
 
-h2 {
-    margin-bottom: 20px;
-    color: #333;
+.form-label {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 8px 14px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.signup-container h2 {
+    margin-bottom: 10px;
+    color: #111827;
+    font-size: 30px;
 }
 
-button {
+.form-description {
+    margin-bottom: 22px;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.signup-container form {
+    display: grid;
+    gap: 14px;
+}
+
+.signup-container input {
     width: 100%;
-    padding: 12px;
-    background-color: #007BFF;
-    color: white;
+    padding: 13px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.signup-container input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 13px;
+    background: #2563eb;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-button:hover {
-    background-color: #0056b3;
+.signup-container button:hover {
+    background: #1d4ed8;
 }
 
-p {
-    margin-top: 15px;
+.form-footer-text {
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 14px;
 }
 
-a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
+.form-footer-text a {
+    color: #2563eb;
+    font-weight: 600;
 }

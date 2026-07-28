@@ -1,189 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <title>About Us</title>
+    <meta charset="UTF-8">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    body {
-      background: #f6f7fb;
-      color: #1f2937;
-    }
+    <title>About | Student Portal</title>
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 8%;
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: #374151;
-      margin-left: 24px;
-    }
-
-    .about-section {
-      min-height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 8%;
-    }
-
-    .about-container {
-      max-width: 1000px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-      background: #ffffff;
-      padding: 50px;
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-    }
-
-    .about-image {
-      min-height: 350px;
-      border-radius: 16px;
-      background:
-        linear-gradient(
-          135deg,
-          #fde68a,
-          #fca5a5,
-          #bfdbfe
-        );
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 90px;
-    }
-
-    .about-content h1 {
-      font-size: 44px;
-      margin-bottom: 20px;
-    }
-
-    .about-content p {
-      line-height: 1.7;
-      color: #6b7280;
-      margin-bottom: 18px;
-    }
-
-    .features {
-      margin-top: 25px;
-      display: grid;
-      gap: 12px;
-    }
-
-    .feature {
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 10px;
-      border-left: 4px solid #f59e0b;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 24px;
-      background: #111827;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #ffffff;
-      color: #6b7280;
-    }
-
-    @media (max-width: 768px) {
-      .about-container {
-        grid-template-columns: 1fr;
-        padding: 30px;
-      }
-
-      .about-content h1 {
-        font-size: 34px;
-      }
-
-      .navbar nav {
-        display: none;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="aboutpage.css">
 </head>
 
 <body>
 
-  <header class="navbar">
-    <div class="logo">To Do List</div>
+    <header class="navbar">
+        <a href="home.html" class="logo">
+            Student Portal
+        </a>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="aboutpage.html" class="active">About</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html" class="signup-link">
+                Sign Up
+            </a>
+        </nav>
+    </header>
 
-  <main class="about-section">
+    <main class="about-page">
     <div class="about-container">
 
-      <div class="about-image">
-        📝
-      </div>
-
-      <div class="about-content">
-        <h1>About Our Project</h1>
-
-        <p>
-          Our To Do List application helps users organise tasks,
-          manage daily work, and keep important notes in one place.
-        </p>
-
-        <p>
-          The project is designed with a simple interface so anyone
-          can create, update, and manage tasks easily.
-        </p>
-
-        <div class="features">
-          <div class="feature">Create and manage tasks</div>
-          <div class="feature">Organise work using lists</div>
-          <div class="feature">Keep notes saved in the browser</div>
+        <div class="about-image">
+            <div class="about-illustration">🎓</div>
         </div>
 
-        <a href="index.html" class="button">
-          Go Back Home
-        </a>
-      </div>
+        <div class="about-content">
+            <span class="about-label">
+                About Student Portal
+            </span>
+
+            <h1>
+                A simple portal made for students.
+            </h1>
+
+            <p>
+                The Student Portal helps students access their account,
+                log in securely, and view important information from one place.
+            </p>
+
+            <p>
+                This project is designed with a clean and simple interface
+                so students can use it easily on desktop and mobile devices.
+            </p>
+
+            <div class="about-features">
+                <div class="about-feature">
+                    <span>✓</span>
+                    Secure student login
+                </div>
+
+                <div class="about-feature">
+                    <span>✓</span>
+                    Easy account access
+                </div>
+
+                <div class="about-feature">
+                    <span>✓</span>
+                    Simple responsive design
+                </div>
+            </div>
+
+            <a href="home.html" class="primary-button about-button">
+                Go Back Home
+            </a>
+        </div>
 
     </div>
-  </main>
+</main>
 
-  <footer>
-    © 2026 To Do List Project
-  </footer>
+    <footer>
+        <p>© 2026 Student Portal</p>
+    </footer>
 
 </body>
 </html>

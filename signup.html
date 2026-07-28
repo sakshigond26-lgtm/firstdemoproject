@@ -2,28 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sign Up | Student Portal</title>
+
     <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h2>Create Account</h2>
+    <header class="navbar">
+        <a href="home.html" class="logo">
+            Student Portal
+        </a>
 
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="aboutpage.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html" class="signup-link active">
+                Sign Up
+            </a>
+        </nav>
+    </header>
 
-            <button type="submit">Sign Up</button>
-        </form>
+    <main class="signup-page">
+        <div class="signup-container">
 
-        <p>Already have an account?
-            <a href="index.html">Login</a>
-        </p>
-    </div>
+            <span class="form-label">
+                Create Your Account
+            </span>
+
+            <h2>Join Student Portal</h2>
+
+            <p class="form-description">
+                Enter your details to create a new student account.
+            </p>
+
+            <form id="signupForm">
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Password"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    required
+                >
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="form-footer-text">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
